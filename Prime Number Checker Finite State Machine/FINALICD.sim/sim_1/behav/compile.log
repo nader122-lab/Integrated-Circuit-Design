@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/FINALICD/FINALICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/FINALICD/FINALICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB

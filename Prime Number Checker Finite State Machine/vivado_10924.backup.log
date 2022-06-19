@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Mar 29 14:42:49 2021
+# Process ID: 10924
+# Current directory: C:/Users/Nader/Downloads/FINALICD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18840 C:\Users\Nader\Downloads\FINALICD\FINALICD.xpr
+# Log file: C:/Users/Nader/Downloads/FINALICD/vivado.log
+# Journal file: C:/Users/Nader/Downloads/FINALICD\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/Nader/Downloads/FINALICD/FINALICD.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 798.297 ; gain = 10.750
+update_compile_order -fileset sources_exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 29 14:47:44 2021...
+.

@@ -1,0 +1,1 @@
+-wto "2f2ba17ca83246c9838fc0a70e07b15b" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "PNC_TB_behav" "xil_defaultlib.PNC_TB" -log "elaborate.log" 

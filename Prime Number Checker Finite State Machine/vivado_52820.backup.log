@@ -1,0 +1,551 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Mar 25 21:32:35 2021
+# Process ID: 52820
+# Current directory: C:/Users/Nader/Downloads/FINALICD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent55900 C:\Users\Nader\Downloads\FINALICD\FINALICD.xpr
+# Log file: C:/Users/Nader/Downloads/FINALICD/vivado.log
+# Journal file: C:/Users/Nader/Downloads/FINALICD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Nader/Downloads/FINALICD/FINALICD.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 804.977 ; gain = 86.859
+update_compile_order -fileset sources_1
+save_project_as projectICD C:/Users/Nader/Downloads/projectICD -force
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PNC_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PNC_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 6af90e9c16a74a8eb70eb391e52ed9c5 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PNC_TB_behav xil_defaultlib.PNC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture fsm of entity xil_defaultlib.Pnc_FSM [pnc_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pnc_tb
+Built simulation snapshot PNC_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav/xsim.dir/PNC_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar 25 21:38:09 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PNC_TB_behav -key {Behavioral:sim_1:Functional:PNC_TB} -tclbatch {PNC_TB.tcl} -view {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg
+source PNC_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PNC_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 804.977 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 839.590 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PNC_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PNC_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 6af90e9c16a74a8eb70eb391e52ed9c5 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PNC_TB_behav xil_defaultlib.PNC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture fsm of entity xil_defaultlib.Pnc_FSM [pnc_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pnc_tb
+Built simulation snapshot PNC_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav/xsim.dir/PNC_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 26 18:13:55 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 839.590 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PNC_TB_behav -key {Behavioral:sim_1:Functional:PNC_TB} -tclbatch {PNC_TB.tcl} -view {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg
+source PNC_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PNC_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 839.590 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PNC_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PNC_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 6af90e9c16a74a8eb70eb391e52ed9c5 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PNC_TB_behav xil_defaultlib.PNC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture fsm of entity xil_defaultlib.Pnc_FSM [pnc_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pnc_tb
+Built simulation snapshot PNC_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav/xsim.dir/PNC_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 26 18:18:47 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PNC_TB_behav -key {Behavioral:sim_1:Functional:PNC_TB} -tclbatch {PNC_TB.tcl} -view {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg
+source PNC_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PNC_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 839.590 ; gain = 0.000
+run all
+save_wave_config {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PNC_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PNC_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 6af90e9c16a74a8eb70eb391e52ed9c5 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PNC_TB_behav xil_defaultlib.PNC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture fsm of entity xil_defaultlib.Pnc_FSM [pnc_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pnc_tb
+Built simulation snapshot PNC_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav/xsim.dir/PNC_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 26 18:27:36 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PNC_TB_behav -key {Behavioral:sim_1:Functional:PNC_TB} -tclbatch {PNC_TB.tcl} -view {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg
+source PNC_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PNC_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 839.590 ; gain = 0.000
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PNC_TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj PNC_TB_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Pnc_FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sim_1/new/PNC_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PNC_TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 6af90e9c16a74a8eb70eb391e52ed9c5 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PNC_TB_behav xil_defaultlib.PNC_TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture fsm of entity xil_defaultlib.Pnc_FSM [pnc_fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.pnc_tb
+Built simulation snapshot PNC_TB_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav/xsim.dir/PNC_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 26 18:28:39 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Nader/Downloads/projectICD/projectICD.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PNC_TB_behav -key {Behavioral:sim_1:Functional:PNC_TB} -tclbatch {PNC_TB.tcl} -view {C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Nader/Downloads/Iproject_1/PNC_TB_behav.wcfg
+source PNC_TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PNC_TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 840.246 ; gain = 0.000
+run all
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: Pnc_FSM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 887.117 ; gain = 46.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Pnc_FSM' [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+WARNING: [Synth 8-614] signal 'Input' is read in the process but is not in the sensitivity list [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Pnc_FSM' (1#1) [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 916.176 ; gain = 75.930
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 916.176 ; gain = 75.930
+---------------------------------------------------------------------------------
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+4 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+INFO: [Common 17-344] 'synth_design' was cancelled
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Mar 26 19:16:21 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Nader/Downloads/projectICD/projectICD.runs/synth_1/runme.log
+[Fri Mar 26 19:16:22 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Nader/Downloads/projectICD/projectICD.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: Pnc_FSM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 945.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Pnc_FSM' [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+WARNING: [Synth 8-614] signal 'Input' is read in the process but is not in the sensitivity list [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Pnc_FSM' (1#1) [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 963.422 ; gain = 17.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 963.422 ; gain = 17.551
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led4[3]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4[2]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4[1]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led4[0]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[0]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:199]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:199]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[1]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[2]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[3]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:202]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:202]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[4]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:203]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[5]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:204]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[6]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:205]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:205]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input[7]'. [C:/Users/Nader/Downloads/DSDB_Master.xdc:206]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Nader/Downloads/DSDB_Master.xdc:206]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.223 ; gain = 292.352
+6 Infos, 13 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1238.223 ; gain = 292.352
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Mar 26 19:23:44 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Nader/Downloads/projectICD/projectICD.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Fri Mar 26 19:24:42 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Nader/Downloads/projectICD/projectICD.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+Finished Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.309 ; gain = 47.086
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: Pnc_FSM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1285.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Pnc_FSM' [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+WARNING: [Synth 8-614] signal 'Input' is read in the process but is not in the sensitivity list [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'Pnc_FSM' (1#1) [C:/Users/Nader/Downloads/projectICD/projectICD.srcs/sources_1/new/ANDGATE.vhd:48]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+Finished Parsing XDC File [C:/Users/Nader/Downloads/DSDB_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.309 ; gain = 0.000
+5 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.309 ; gain = 0.000
+save_project_as ICDdemonstration C:/Users/Nader/Downloads/ICDdemonstration -force
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.309 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.309 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 27 15:04:01 2021...
