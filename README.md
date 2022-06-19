@@ -1,4 +1,4 @@
-# Integrated-Circuit-Design
+# Integrated-Circuit-Design Prime Number Checker Finite State Machine
 The code simulates a finite state machine that can check whether or not a given decimal natural number between 0 and
 127 is a prime number which can be used simulate inputs on an ELVIS board to check functionality
 
